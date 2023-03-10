@@ -1,0 +1,53 @@
+.principal {
+  background: url("../img/code_fundo.jpg") no-repeat center / cover;
+  width: 100%;
+  height: 100%;
+  padding-top: 12rem;
+  padding-bottom: 6.2rem;
+}
+.principal-div {
+  width: 100%;
+  position: relative;
+}
+
+.principal__div--titulo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--verde);
+}
+
+.principal__div--nome {
+  text-align: center;
+  color: var(--branco);
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+.principal__div--profissao {
+  text-align: center;
+  color: var(--branco);
+  width: auto;
+  text-transform: uppercase;
+  margin-bottom: 8rem;
+}
+
+.principal__div--profissao::before {
+  margin: 12px;
+  content: "|";
+  color: var(--verde);
+}
+
+.principal__div--profissao::after {
+  margin: 12px;
+  content: "|";
+  color: var(--verde);
+}
+
+.principal__img {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+}
