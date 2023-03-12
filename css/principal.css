@@ -10,14 +10,6 @@
   position: relative;
 }
 
-.principal__div--titulo {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--verde);
-}
-
 .principal__div--nome {
   text-align: center;
   color: var(--branco);
@@ -29,9 +21,8 @@
 .principal__div--profissao {
   text-align: center;
   color: var(--branco);
-  width: auto;
   text-transform: uppercase;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 
 .principal__div--profissao::before {
@@ -44,6 +35,42 @@
   margin: 12px;
   content: "|";
   color: var(--verde);
+}
+
+.principal__div-icones {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.principal__div-icones--curriculo {
+  text-decoration: none;
+  background-color: var(--branco);
+  margin-right: 1rem;
+  padding: 0.6rem;
+  border-radius: 50px;
+  font-weight: 600;
+  color: var(--preto);
+}
+
+.principal__div-icones--curriculo:hover {
+  background-color: var(--verde);
+}
+
+.principal__div-icones--link {
+  text-align: center;
+}
+
+.principal__div-icones--redes {
+  margin-right: 1rem;
+  width: 30px;
+  height: 30px;
+}
+
+.principal__div-icones--redes:hover {
+  background-color: var(--verde);
+  border-radius: 5px;
 }
 
 .principal__img {

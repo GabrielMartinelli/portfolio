@@ -4,7 +4,9 @@
 :root {
   --branco: #ffffff;
   --cor-menu: #141414;
-  --verde: #589e64;
+  --verde: #00d6a2;
+  --preto: #000000;
+  --verde-escuro: #038363;
 }
 
 body {

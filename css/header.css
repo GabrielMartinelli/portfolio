@@ -13,6 +13,25 @@
   justify-content: space-between;
 }
 
+.cabecalho-nav__menu {
+  width: 40px;
+  height: 40px;
+}
+
+.cabecalho-nav__menu:hover {
+  cursor: pointer;
+  background-color: var(--verde-escuro);
+  border-radius: 50%;
+}
+
+.cabecalho-nav__titulo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--verde);
+}
+
 .cabecalho-nav__lista {
   display: flex;
 }
@@ -43,7 +62,6 @@
 
 .cabecalho-nav__bandeiras--br:hover,
 .cabecalho-nav__bandeiras--usa:hover {
-  transition: 0.3s;
   cursor: pointer;
   width: 37px;
   height: 37px;
