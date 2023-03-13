@@ -1,18 +1,18 @@
 @import url(header.css);
 @import url(principal.css);
+@import url(sobre.css);
 
 :root {
   --branco: #ffffff;
-  --cor-menu: #141414;
-  --verde: #00d6a2;
   --preto: #000000;
+  --verde: #00d6a2;
   --verde-escuro: #038363;
 }
 
 body {
-  height: 100%;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  height: 100%;
   width: 100%;
 }

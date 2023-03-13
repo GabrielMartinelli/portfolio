@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="cabecalho">
+    <header id="cabecalhoID" class="cabecalho">
       <nav class="cabecalho-nav">
         <img id="cabecalho-menu" class="cabecalho-nav__menu" src="img/menu.png" alt="Icone do menu" />
         <ul id="cabecalho-navID" class="cabecalho-nav__lista">
@@ -45,8 +45,27 @@
         </div>
       </div>
 
-      <img class="principal__img" src="img/divisor.png" alt="Imagem para dividir a tela" />
+      <img class="principal__imgDivisoria" src="img/divisor.png" alt="Imagem para dividir a tela" />
     </main>
+    <section class="sobre">
+      <img class="sobre__img" src="img/perfil.jpg" alt="Imagem perfil Gabriel" />
+      <div class="sobre__descricao">
+        <h2 class="sobre__descricao--titulo">Sobre mim</h2>
+        <p class="sobre__descricao--paragrafo">
+          Formado em Ciência da Computação pela PUC Minas Poços de Caldas, hoje estou com 30 anos, atualmente estudo
+          HTML, CSS, JavaScript e TypeScript na plataforma Alura. Trabalhei por 17 anos na área tributária, hoje estou
+          em uma transição de carreira para o mundo da tecnologia. Gosto de trabalhar em equipe e busco uma oportunidade
+          para assumir novos desafios e fazer a diferença.
+        </p>
+        <h2 class="sobre__descricao--subtiulo">Habilidades</h2>
+        <div class="sobre__descricao-div">
+          <img class="sobre__descricao-div--img" src="img/html5.png" alt="Simbolo do HTML5" />
+          <img class="sobre__descricao-div--img" src="img/css.png" alt="Simbolo do CSS3" />
+          <img class="sobre__descricao-div--img" src="img/js.png" alt="Simbolo do JavaScript" />
+          <img class="sobre__descricao-div--img" src="img/typescript.png" alt="Simbolo do TypeScript" />
+        </div>
+      </div>
+    </section>
 
     <footer></footer>
     <script src="js/main.js"></script>
