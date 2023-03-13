@@ -47,6 +47,12 @@
 .cabecalho-nav__lista--item {
   list-style: none;
   margin: 1rem 0;
+  position: relative;
+}
+
+.cabecalho-nav__lista--item:hover {
+  transform: scale(1.04);
+  transition: 0.3s;
 }
 
 .cabecalho-nav__lista--link {
@@ -55,12 +61,51 @@
   padding: 0.5rem 0.2rem;
   text-decoration: none;
   text-transform: uppercase;
+  margin-left: 1rem;
+}
+
+.cabecalho-nav__lista--link1::before {
+  content: url("../img/home.png");
+  position: absolute;
+  top: -2px;
+  left: -20px;
+  display: flex;
+}
+
+.cabecalho-nav__lista--link2::before {
+  content: url("../img/sobre.png");
+  position: absolute;
+  top: -2px;
+  left: -20px;
+  display: flex;
+}
+
+.cabecalho-nav__lista--link3::before {
+  content: url("../img/formacao.png");
+  position: absolute;
+  top: -2px;
+  left: -20px;
+  display: flex;
+}
+
+.cabecalho-nav__lista--link4::before {
+  content: url("../img/projetos.png");
+  position: absolute;
+  top: -2px;
+  left: -20px;
+  display: flex;
+}
+
+.cabecalho-nav__lista--link5::before {
+  content: url("../img/contato.png");
+  position: absolute;
+  top: -2px;
+  left: -20px;
+  display: flex;
 }
 
 .cabecalho-nav__lista--link:hover {
   border-bottom: 4px solid var(--verde);
-  font-size: 1.3rem;
-  transition: 0.3s;
 }
 
 .cabecalho-nav__bandeiras--br,
@@ -73,6 +118,5 @@
 .cabecalho-nav__bandeiras--br:hover,
 .cabecalho-nav__bandeiras--usa:hover {
   cursor: pointer;
-  height: 37px;
-  width: 37px;
+  transform: scale(1.1);
 }

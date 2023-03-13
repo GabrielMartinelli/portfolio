@@ -17,11 +17,21 @@
       <nav class="cabecalho-nav">
         <img id="cabecalho-menu" class="cabecalho-nav__menu" src="img/menu.png" alt="Icone do menu" />
         <ul id="cabecalho-navID" class="cabecalho-nav__lista">
-          <li class="cabecalho-nav__lista--item"><a href="#" class="cabecalho-nav__lista--link">Início</a></li>
-          <li class="cabecalho-nav__lista--item"><a href="#" class="cabecalho-nav__lista--link">Sobre</a></li>
-          <li class="cabecalho-nav__lista--item"><a href="#" class="cabecalho-nav__lista--link">Formação</a></li>
-          <li class="cabecalho-nav__lista--item"><a href="#" class="cabecalho-nav__lista--link">Projetos</a></li>
-          <li class="cabecalho-nav__lista--item"><a href="#" class="cabecalho-nav__lista--link">Contato</a></li>
+          <li class="cabecalho-nav__lista--item">
+            <a href="#principal" class="cabecalho-nav__lista--link cabecalho-nav__lista--link1">Início</a>
+          </li>
+          <li class="cabecalho-nav__lista--item">
+            <a href="#sobre" class="cabecalho-nav__lista--link cabecalho-nav__lista--link2">Sobre</a>
+          </li>
+          <li class="cabecalho-nav__lista--item">
+            <a href="#" class="cabecalho-nav__lista--link cabecalho-nav__lista--link3">Formação</a>
+          </li>
+          <li class="cabecalho-nav__lista--item">
+            <a href="#" class="cabecalho-nav__lista--link cabecalho-nav__lista--link4">Projetos</a>
+          </li>
+          <li class="cabecalho-nav__lista--item">
+            <a href="#" class="cabecalho-nav__lista--link cabecalho-nav__lista--link5">Contato</a>
+          </li>
         </ul>
         <h1 class="cabecalho-nav__titulo">portfólio</h1>
         <div class="cabecalho-nav__bandeiras">
@@ -30,7 +40,7 @@
         </div>
       </nav>
     </header>
-    <main class="principal">
+    <main class="principal" id="principal">
       <div class="principal__div">
         <h2 class="principal__div--nome">Gabriel Martinelli</h2>
         <h3 class="principal__div--profissao">Desenvolvedor Front-end</h3>
@@ -47,7 +57,7 @@
 
       <img class="principal__imgDivisoria" src="img/divisor.png" alt="Imagem para dividir a tela" />
     </main>
-    <section class="sobre">
+    <section class="sobre" id="sobre">
       <img class="sobre__img" src="img/perfil.jpg" alt="Imagem perfil Gabriel" />
       <div class="sobre__descricao">
         <h2 class="sobre__descricao--titulo">Sobre mim</h2>
@@ -59,10 +69,22 @@
         </p>
         <h2 class="sobre__descricao--subtiulo">Habilidades</h2>
         <div class="sobre__descricao-div">
-          <img class="sobre__descricao-div--img" src="img/html5.png" alt="Simbolo do HTML5" />
-          <img class="sobre__descricao-div--img" src="img/css.png" alt="Simbolo do CSS3" />
-          <img class="sobre__descricao-div--img" src="img/js.png" alt="Simbolo do JavaScript" />
-          <img class="sobre__descricao-div--img" src="img/typescript.png" alt="Simbolo do TypeScript" />
+          <div class="sobre__descricao-div2">
+            <span class="sobre__descricao-div2--titulo">HTML5</span>
+            <img class="sobre__descricao-div2--img" src="img/html5.png" alt="Simbolo do HTML5" />
+          </div>
+          <div class="sobre__descricao-div2">
+            <span class="sobre__descricao-div2--titulo">CSS3</span>
+            <img class="sobre__descricao-div2--img" src="img/css.png" alt="Simbolo do CSS3" />
+          </div>
+          <div class="sobre__descricao-div2">
+            <span class="sobre__descricao-div2--titulo">JavaScript</span>
+            <img class="sobre__descricao-div2--img" src="img/js.png" alt="Simbolo do JavaScript" />
+          </div>
+          <div class="sobre__descricao-div2">
+            <span class="sobre__descricao-div2--titulo">TypeScript</span>
+            <img class="sobre__descricao-div2--img" src="img/typescript.png" alt="Simbolo do TypeScript" />
+          </div>
         </div>
       </div>
     </section>

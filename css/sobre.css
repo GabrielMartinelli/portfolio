@@ -38,8 +38,28 @@
   justify-content: center;
 }
 
-.sobre__descricao-div--img {
+.sobre__descricao-div2 {
+  margin-right: 2rem;
+  background-color: var(--preto);
+  padding: 1rem;
+  border-radius: 15px 0 0 0;
+  border-bottom: 4px solid var(--verde);
+  transition: 0.2s;
+  height: 70px;
+  width: 70px;
+}
+
+.sobre__descricao-div2--img {
   height: 40px;
   width: 40px;
-  margin-right: 2rem;
+  padding: 1rem;
+}
+
+.sobre__descricao-div2:hover {
+  transform: scale(1.1);
+}
+
+.sobre__descricao-div2--titulo {
+  font-size: 14px;
+  color: var(--verde);
 }
