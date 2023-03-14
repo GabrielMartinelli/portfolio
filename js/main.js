@@ -22,6 +22,7 @@ const animarSroll = () => {
     cabecalho.style.transition = ".5s";
   } else {
     cabecalho.style.backgroundColor = "transparent";
+    cabecalho.style.opacity = "0.9";
   }
 };
 

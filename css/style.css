@@ -1,12 +1,16 @@
 @import url(header.css);
 @import url(principal.css);
 @import url(sobre.css);
+@import url(formacao.css);
+@import url(contato.css);
+@import url(carrossel.css);
 
 :root {
   --branco: #ffffff;
   --preto: #000000;
   --verde: #00d6a2;
   --verde-escuro: #038363;
+  --cinza: #d4d4d4;
 }
 
 body {

@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio Gabriel Martinelli</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -24,7 +26,7 @@
             <a href="#sobre" class="cabecalho-nav__lista--link cabecalho-nav__lista--link2">Sobre</a>
           </li>
           <li class="cabecalho-nav__lista--item">
-            <a href="#" class="cabecalho-nav__lista--link cabecalho-nav__lista--link3">Formação</a>
+            <a href="#formacao" class="cabecalho-nav__lista--link cabecalho-nav__lista--link3">Formação</a>
           </li>
           <li class="cabecalho-nav__lista--item">
             <a href="#" class="cabecalho-nav__lista--link cabecalho-nav__lista--link4">Projetos</a>
@@ -46,10 +48,10 @@
         <h3 class="principal__div--profissao">Desenvolvedor Front-end</h3>
         <div class="principal__div-icones">
           <a class="principal__div-icones--curriculo" href="#">Download CV</a>
-          <a class="principal__div-icones--link" href="#"
+          <a class="principal__div-icones--link" href="https://github.com/GabrielMartinelli" target="_blank"
             ><img class="principal__div-icones--redes" src="img/icon_git.png" alt="Icone do GitHub"
           /></a>
-          <a class="principal__div-icones--link" href="#"
+          <a class="principal__div-icones--link" href="https://www.linkedin.com/in/gabriel-martinelli/" target="_blank"
             ><img class="principal__div-icones--redes" src="img/icon_linkedin.png" alt="Icone do Linkedin"
           /></a>
         </div>
@@ -67,7 +69,9 @@
           em uma transição de carreira para o mundo da tecnologia. Gosto de trabalhar em equipe e busco uma oportunidade
           para assumir novos desafios e fazer a diferença.
         </p>
-        <h2 class="sobre__descricao--subtiulo">Habilidades</h2>
+        <div class="sobre__descricao-div">
+          <h2 class="sobre__descricao--subtitulo">Habilidades</h2>
+        </div>
         <div class="sobre__descricao-div">
           <div class="sobre__descricao-div2">
             <span class="sobre__descricao-div2--titulo">HTML5</span>
@@ -88,8 +92,129 @@
         </div>
       </div>
     </section>
+    <section class="formacao" id="formacao">
+      <h2 class="formacao-titulo">Formação</h2>
+      <div class="formacao-td">
+        <div class="formacao-td__div">
+          <h3 class="formacao-td__div--titulo">Pontifícia Universidade Católica de Minas Gerais</h3>
+          <h3 class="formacao-td__div--subtitulo">Graduação em Ciência da Computação</h3>
+          <p class="formacao-td__div--paragrafo">
+            Bacharelado de Ciência da Computação com trabalho de conclusão de curso na área da Realidade Aumentada. O
+            projeto final trata-se de um sistema de cadastros e consultas web com a integração do recurso de realidade
+            aumentada. Foi implementada uma aplicação web, em que se utilizou as linguagens de programação e marcação
+            <b>PHP, HTML, HTML5, CSS e JavaScript,</b> sendo que as bibliotecas utilizadas deste último foram jQuery,
+            three.js, skarf.js, js-aruco. Os dados foram salvos em um servidor de banco de dados MySQL. Os frameworks
+            utilizados foram WebGL e Bootstrap e os ambientes de desenvolvimento foram Adobe Dreamweaver CS6, Notepad++
+            e Blender.
+          </p>
+          <a class="formacao-td__div--link" href="pdf/artigotcc.pdf" target="_blank">Ver mais</a>
+        </div>
+        <div class="formacao-td__div">
+          <h3 class="formacao-td__div--titulo">Alura</h3>
+          <h3 class="formacao-td__div--subtitulo">Formação HTML e CSS</h3>
+          <p class="formacao-td__div--paragrafo">
+            Competências desenvolvidas: HTML5, CSS3, posicionamento, listas e navegação, formulários, tabelas, Flexbox,
+            Grid e responsividade mobile-first.
+          </p>
+          <span class="formacao-td__div--tempo">Carga horária: 65h.</span>
+          <a class="formacao-td__div--link" target="_blank" href="pdf/certificado_alura_html-css.pdf">Certificado</a>
+        </div>
+        <div class="formacao-td__div">
+          <h3 class="formacao-td__div--titulo">Alura</h3>
+          <h3 class="formacao-td__div--subtitulo">Formação Desenvolva aplicações Web com JavaScript</h3>
+          <p class="formacao-td__div--paragrafo">
+            Competências desenvolvidas: Manipulação do DOM, validações de formulários, reconhecimento de voz, consumindo
+            e tratando dados de uma API, arrays e requisições.
+          </p>
+          <span class="formacao-td__div--tempo">Carga horária: 60h.</span>
+          <a class="formacao-td__div--link" target="_blank" href="pdf/certificado_alura_javascript.pdf">Certificado</a>
+        </div>
+        <div class="formacao-td__div">
+          <h3 class="formacao-td__div--titulo">Alura</h3>
+          <h3 class="formacao-td__div--subtitulo">Formação Mergulhe no javaScript com TypeScript</h3>
+          <p class="formacao-td__div--paragrafo">
+            Competências desenvolvidas: Instalação do TypeScript, configurações do compilador, modificadores, benefícios
+            da tipagem estática, generics, herança, classe abstrata, métodos, enumerations e decorators.
+          </p>
+          <span class="formacao-td__div--tempo">Carga horária: 31h.</span>
+          <a class="formacao-td__div--link" target="_blank" href="pdf/certificado_alura_typescript.pdf">Certificado</a>
+        </div>
+      </div>
+    </section>
 
-    <footer></footer>
+    <section class="carrossel">
+      <div class="carrossel-div">
+        <h2 class="carrossel-div__titulo">PROJETOS</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h2 class="carrossel-div__slide--titulo">Netflix - Clone</h2>
+              <img class="carrossel-div__slide--img" src="img/netflix.jpg" alt="Capa do site Netflix" />
+            </div>
+            <div class="swiper-slide">
+              <h2 class="carrossel-div__slide--titulo">Freeway Grandparents</h2>
+              <img class="carrossel-div__slide--img" src="img/freeway.jpg" alt="Capa do jogo Freeway" />
+            </div>
+            <div class="swiper-slide">
+              <h2 class="carrossel-div__slide--titulo">Netflix - Clone</h2>
+              <img class="carrossel-div__slide--img" src="img/netflix.jpg" alt="Capa do site Netflix" />
+            </div>
+            <div class="swiper-slide">
+              <h2 class="carrossel-div__slide--titulo">Freeway Grandparents</h2>
+              <img class="carrossel-div__slide--img" src="img/freeway.jpg" alt="Capa do jogo Freeway" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <h2 class="rodape-titulo">Contato</h2>
+      <div class="rodape-principal">
+        <a class="rodape-principal__link" href="mailto:gabrielmartinelli10@gmail.com" target="_blank">
+          <div class="rodape-principal__div">
+            <img class="rodape-principal__div--img" src="img/email.png" alt="Icone de email" />
+            <span class="rodape-principal__div--titulo">E-mail</span>
+            <span class="rodape-principal__div--contexto">gabrielmartinelli10@gmail.com</span>
+          </div>
+        </a>
+        <a class="rodape-principal__link" href="https://api.whatsapp.com/send?phone=5535999632486" target="_blank">
+          <div class="rodape-principal__div">
+            <img class="rodape-principal__div--img" src="img/whatsapp.png" alt="Icone do whatsapp" />
+            <span class="rodape-principal__div--titulo">whatsapp/ligação</span>
+            <span class="rodape-principal__div--contexto">(35)99963-2486</span>
+          </div>
+        </a>
+        <a class="rodape-principal__link" href="https://github.com/GabrielMartinelli" target="_blank">
+          <div class="rodape-principal__div">
+            <img class="rodape-principal__div--img" src="img/icon_git.png" alt="Icone de GitHub" />
+            <span class="rodape-principal__div--titulo">GitHub</span>
+            <span class="rodape-principal__div--contexto">@GabrielMartinelli</span>
+          </div>
+        </a>
+        <a class="rodape-principal__link" href="https://www.linkedin.com/in/gabriel-martinelli/" target="_blank">
+          <div class="rodape-principal__div">
+            <img class="rodape-principal__div--img" src="img/icon_linkedin.png" alt="Icone de email" />
+            <span class="rodape-principal__div--titulo">Linkedin</span>
+            <span class="rodape-principal__div--contexto">@gabriel-martinelli</span>
+          </div>
+        </a>
+      </div>
+      <span class="rodape-subtitulo">© Todos os direitos reservados - Desenvolvido por Gabriel Martinelli</span>
+    </footer>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

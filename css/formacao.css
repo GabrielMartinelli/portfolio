@@ -1,0 +1,66 @@
+.formacao {
+  margin-top: 5rem;
+}
+
+.formacao-titulo {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 3rem;
+}
+
+.formacao-td {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.formacao-td__div {
+  border: 1px solid var(--preto);
+  box-shadow: 10px -8px var(--verde);
+  padding: 2rem;
+  margin: 3rem;
+  flex-grow: 1;
+  flex-basis: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.formacao-td__div--titulo {
+  margin-bottom: 1rem;
+}
+
+.formacao-td__div--subtitulo {
+  font-size: 17px;
+}
+
+.formacao-td__div--subtitulo::before,
+.formacao-td__div--subtitulo::after {
+  color: var(--verde);
+  content: "|";
+  margin: 4px;
+}
+
+.formacao-td__div--paragrafo {
+  margin-bottom: 2rem;
+}
+
+.formacao-td__div--link {
+  border: 1px solid var(--preto);
+  padding: 0.6rem;
+  text-decoration: none;
+  border-radius: 25px;
+  color: var(--preto);
+  box-shadow: 4px 3px 3px black;
+  font-weight: bold;
+}
+
+.formacao-td__div--link:hover {
+  background-color: var(--verde);
+  color: var(--branco);
+}
+
+.formacao-td__div--tempo {
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
