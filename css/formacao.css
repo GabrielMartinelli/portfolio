@@ -1,11 +1,20 @@
 .formacao {
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 
 .formacao-titulo {
-  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.formacao-titulo__texto {
   font-size: 32px;
-  margin-bottom: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  width: 160px;
+  border-bottom: 2px solid var(--verde);
+  box-shadow: 2px 1px 1px black;
 }
 
 .formacao-td {

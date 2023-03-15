@@ -6,10 +6,21 @@
 }
 
 .rodape-titulo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+
+.rodape-titulo__texto {
   color: var(--branco);
   font-size: 32px;
   font-weight: 700;
-  margin: 5rem 0;
+
+  width: 135px;
+  border-bottom: 2px solid var(--verde);
+  box-shadow: 2px 1px 1px var(--branco);
 }
 
 .rodape-principal {

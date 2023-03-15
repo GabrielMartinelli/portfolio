@@ -18,10 +18,24 @@
   margin: 0 7rem;
 }
 
-.sobre__descricao--titulo {
+.sobre-titulo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-titulo__texto {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 1rem;
+  width: 180px;
+  border-bottom: 2px solid var(--verde);
+  box-shadow: 2px 1px 1px black;
+}
+
+.sobre__habilidades {
+  box-shadow: 6px 2px 2px black;
+  padding: 1rem;
 }
 
 .sobre__descricao--paragrafo {
@@ -33,9 +47,6 @@
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
-  width: 130px;
-  border-bottom: 2px solid var(--verde);
-  box-shadow: 2px 1px 1px black;
 }
 
 .sobre__descricao-div {

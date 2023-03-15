@@ -62,38 +62,42 @@
     <section class="sobre" id="sobre">
       <img class="sobre__img" src="img/perfil.jpg" alt="Imagem perfil Gabriel" />
       <div class="sobre__descricao">
-        <h2 class="sobre__descricao--titulo">Sobre mim</h2>
+        <div class="sobre-titulo">
+          <h2 class="sobre-titulo__texto">Sobre mim</h2>
+        </div>
         <p class="sobre__descricao--paragrafo">
           Formado em Ciência da Computação pela PUC Minas Poços de Caldas, hoje estou com 30 anos, atualmente estudo
           HTML, CSS, JavaScript e TypeScript na plataforma Alura. Trabalhei por 17 anos na área tributária, hoje estou
           em uma transição de carreira para o mundo da tecnologia. Gosto de trabalhar em equipe e busco uma oportunidade
           para assumir novos desafios e fazer a diferença.
         </p>
-        <div class="sobre__descricao-div">
+        <div class="sobre__habilidades">
           <h2 class="sobre__descricao--subtitulo">Habilidades</h2>
-        </div>
-        <div class="sobre__descricao-div">
-          <div class="sobre__descricao-div2">
-            <span class="sobre__descricao-div2--titulo">HTML5</span>
-            <img class="sobre__descricao-div2--img" src="img/html5.png" alt="Simbolo do HTML5" />
-          </div>
-          <div class="sobre__descricao-div2">
-            <span class="sobre__descricao-div2--titulo">CSS3</span>
-            <img class="sobre__descricao-div2--img" src="img/css.png" alt="Simbolo do CSS3" />
-          </div>
-          <div class="sobre__descricao-div2">
-            <span class="sobre__descricao-div2--titulo">JavaScript</span>
-            <img class="sobre__descricao-div2--img" src="img/js.png" alt="Simbolo do JavaScript" />
-          </div>
-          <div class="sobre__descricao-div2">
-            <span class="sobre__descricao-div2--titulo">TypeScript</span>
-            <img class="sobre__descricao-div2--img" src="img/typescript.png" alt="Simbolo do TypeScript" />
+          <div class="sobre__descricao-div">
+            <div class="sobre__descricao-div2">
+              <span class="sobre__descricao-div2--titulo">HTML5</span>
+              <img class="sobre__descricao-div2--img" src="img/html5.png" alt="Simbolo do HTML5" />
+            </div>
+            <div class="sobre__descricao-div2">
+              <span class="sobre__descricao-div2--titulo">CSS3</span>
+              <img class="sobre__descricao-div2--img" src="img/css.png" alt="Simbolo do CSS3" />
+            </div>
+            <div class="sobre__descricao-div2">
+              <span class="sobre__descricao-div2--titulo">JavaScript</span>
+              <img class="sobre__descricao-div2--img" src="img/js.png" alt="Simbolo do JavaScript" />
+            </div>
+            <div class="sobre__descricao-div2">
+              <span class="sobre__descricao-div2--titulo">TypeScript</span>
+              <img class="sobre__descricao-div2--img" src="img/typescript.png" alt="Simbolo do TypeScript" />
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="formacao" id="formacao">
-      <h2 class="formacao-titulo">Formação</h2>
+      <div class="formacao-titulo">
+        <h2 class="formacao-titulo__texto">Formação</h2>
+      </div>
       <div class="formacao-td">
         <div class="formacao-td__div">
           <h3 class="formacao-td__div--titulo">Pontifícia Universidade Católica de Minas Gerais</h3>
@@ -144,24 +148,36 @@
 
     <section class="carrossel">
       <div class="carrossel-div">
-        <h2 class="carrossel-div__titulo">PROJETOS</h2>
+        <div class="carrossel-div-titulo">
+          <h2 class="carrossel-div-titulo__texto">Projetos</h2>
+        </div>
+
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <h2 class="carrossel-div__slide--titulo">Netflix - Clone</h2>
-              <img class="carrossel-div__slide--img" src="img/netflix.jpg" alt="Capa do site Netflix" />
+            <div class="swiper-slide slide__fundo" data-slide>
+              <h2 class="carrossel-div__slide--titulo">Kytal</h2>
+              <img class="carrossel-div__slide--img" src="img/kytal.jpg" alt="Capa do site Netflix" />
+              <div class="carrossel-div-acesso">
+                <a href="#"><img class="carrossel-div-acesso__img" src="img/icon_git.png" alt="Icone do GitHub" /></a>
+                <a class="carrossel-div-acesso__link" href="#">Detalhes</a>
+              </div>
             </div>
-            <div class="swiper-slide">
+
+            <div class="swiper-slide slide__fundo" data-slide>
               <h2 class="carrossel-div__slide--titulo">Freeway Grandparents</h2>
               <img class="carrossel-div__slide--img" src="img/freeway.jpg" alt="Capa do jogo Freeway" />
+              <div class="carrossel-div-acesso">
+                <a href="#"><img class="carrossel-div-acesso__img" src="img/icon_git.png" alt="Icone do GitHub" /></a>
+                <a class="carrossel-div-acesso__link" href="#">Detalhes</a>
+              </div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide slide__fundo" data-slide>
               <h2 class="carrossel-div__slide--titulo">Netflix - Clone</h2>
               <img class="carrossel-div__slide--img" src="img/netflix.jpg" alt="Capa do site Netflix" />
-            </div>
-            <div class="swiper-slide">
-              <h2 class="carrossel-div__slide--titulo">Freeway Grandparents</h2>
-              <img class="carrossel-div__slide--img" src="img/freeway.jpg" alt="Capa do jogo Freeway" />
+              <div class="carrossel-div-acesso">
+                <a href="#"><img class="carrossel-div-acesso__img" src="img/icon_git.png" alt="Icone do GitHub" /></a>
+                <a class="carrossel-div-acesso__link" href="#">Detalhes</a>
+              </div>
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -170,7 +186,9 @@
     </section>
 
     <footer class="rodape">
-      <h2 class="rodape-titulo">Contato</h2>
+      <div class="rodape-titulo">
+        <h2 class="rodape-titulo__texto">Contato</h2>
+      </div>
       <div class="rodape-principal">
         <a class="rodape-principal__link" href="mailto:gabrielmartinelli10@gmail.com" target="_blank">
           <div class="rodape-principal__div">
