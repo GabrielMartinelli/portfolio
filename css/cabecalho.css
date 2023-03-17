@@ -38,15 +38,16 @@
 .cabecalho-nav__lista {
   background-color: var(--preto);
   border-radius: 15px;
-  display: none;
+  transition: 0.2s;
+  opacity: 0;
   flex-direction: column;
-  padding: 2.5rem;
+  padding: 2.5rem 2.5rem 1rem 2.5rem;
   position: absolute;
   top: 0.5rem;
 }
 .cabecalho-nav__lista--item {
   list-style: none;
-  margin: 1rem 0;
+  margin: 2rem 0;
   position: relative;
 }
 

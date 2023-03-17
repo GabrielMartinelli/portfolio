@@ -7,11 +7,12 @@ let verificadorMenu = 0;
 
 menu.addEventListener("click", () => {
   if (verificadorMenu === 0) {
-    navMenu.style.display = "flex";
+    navMenu.style.opacity = "1";
+    navMenu.style.transition = ".5s";
     menu.src = "img/fechar.png";
     verificadorMenu = 1;
   } else {
-    navMenu.style.display = "none";
+    navMenu.style.opacity = "0";
     menu.src = "img/menu.png";
     verificadorMenu = 0;
   }
@@ -32,7 +33,7 @@ window.addEventListener("scroll", () => {
   animarSroll();
 });
 
-const teste = () => {
+const alteracaoCarrossel = () => {
   slide.forEach((elemento) => {
     console.log(elemento);
     elemento.addEventListener("mouseover", () => {
@@ -52,4 +53,4 @@ const teste = () => {
   });
 };
 
-teste();
+alteracaoCarrossel();

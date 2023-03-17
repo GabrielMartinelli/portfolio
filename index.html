@@ -29,10 +29,10 @@
             <a href="#formacao" class="cabecalho-nav__lista--link cabecalho-nav__lista--link3">Formação</a>
           </li>
           <li class="cabecalho-nav__lista--item">
-            <a href="#" class="cabecalho-nav__lista--link cabecalho-nav__lista--link4">Projetos</a>
+            <a href="#projetos" class="cabecalho-nav__lista--link cabecalho-nav__lista--link4">Projetos</a>
           </li>
           <li class="cabecalho-nav__lista--item">
-            <a href="#" class="cabecalho-nav__lista--link cabecalho-nav__lista--link5">Contato</a>
+            <a href="#contato" class="cabecalho-nav__lista--link cabecalho-nav__lista--link5">Contato</a>
           </li>
         </ul>
         <h1 class="cabecalho-nav__titulo">portfólio</h1>
@@ -57,9 +57,9 @@
         </div>
       </div>
 
-      <img class="principal__imgDivisoria" src="img/divisor.png" alt="Imagem para dividir a tela" />
+      <img class="principal__imgDivisoria" id="sobre" src="img/divisor.png" alt="Imagem para dividir a tela" />
     </main>
-    <section class="sobre" id="sobre">
+    <section class="sobre">
       <img class="sobre__img" src="img/perfil.jpg" alt="Imagem perfil Gabriel" />
       <div class="sobre__descricao">
         <div class="sobre-titulo">
@@ -88,13 +88,18 @@
             </div>
             <div class="sobre__descricao-div2">
               <span class="sobre__descricao-div2--titulo">TypeScript</span>
-              <img class="sobre__descricao-div2--img" src="img/typescript.png" alt="Simbolo do TypeScript" />
+              <img
+                class="sobre__descricao-div2--img"
+                id="formacao"
+                src="img/typescript.png"
+                alt="Simbolo do TypeScript"
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="formacao" id="formacao">
+    <section class="formacao">
       <div class="formacao-titulo">
         <h2 class="formacao-titulo__texto">Formação</h2>
       </div>
@@ -141,7 +146,9 @@
             da tipagem estática, generics, herança, classe abstrata, métodos, enumerations e decorators.
           </p>
           <span class="formacao-td__div--tempo">Carga horária: 31h.</span>
-          <a class="formacao-td__div--link" target="_blank" href="pdf/certificado_alura_typescript.pdf">Certificado</a>
+          <a class="formacao-td__div--link" id="projetos" target="_blank" href="pdf/certificado_alura_typescript.pdf"
+            >Certificado</a
+          >
         </div>
       </div>
     </section>
@@ -156,36 +163,55 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide slide__fundo" data-slide>
               <h2 class="carrossel-div__slide--titulo">Kytal</h2>
-              <img class="carrossel-div__slide--img" src="img/kytal.jpg" alt="Capa do site Netflix" />
+              <a target="_blank" href="https://kytal.vercel.app/"
+                ><img class="carrossel-div__slide--img" src="img/kytal.jpg" alt="Capa do site Kytal"
+              /></a>
               <div class="carrossel-div-acesso">
-                <a href="#"><img class="carrossel-div-acesso__img" src="img/icon_git.png" alt="Icone do GitHub" /></a>
                 <a class="carrossel-div-acesso__link" href="#">Detalhes</a>
               </div>
             </div>
-
             <div class="swiper-slide slide__fundo" data-slide>
               <h2 class="carrossel-div__slide--titulo">Freeway Grandparents</h2>
-              <img class="carrossel-div__slide--img" src="img/freeway.jpg" alt="Capa do jogo Freeway" />
+              <a href="https://freeway-copy.vercel.app/" target="_blank"
+                ><img class="carrossel-div__slide--img" src="img/freeway.jpg" alt="Capa do jogo Freeway"
+              /></a>
               <div class="carrossel-div-acesso">
-                <a href="#"><img class="carrossel-div-acesso__img" src="img/icon_git.png" alt="Icone do GitHub" /></a>
+                <a href="https://github.com/GabrielMartinelli/freeway_copy.git" target="_blank"
+                  ><img class="carrossel-div-acesso__img" src="img/icon_git.png" alt="Icone do GitHub"
+                /></a>
+                <a class="carrossel-div-acesso__link" href="#">Detalhes</a>
+              </div>
+            </div>
+            <div class="swiper-slide slide__fundo" data-slide>
+              <h2 class="carrossel-div__slide--titulo">EWL</h2>
+              <a href="https://www.ewlcontabil.com.br/" target="_blank"
+                ><img class="carrossel-div__slide--img" src="img/ewl.jpg" alt="Capa do site EWL"
+              /></a>
+              <div class="carrossel-div-acesso">
                 <a class="carrossel-div-acesso__link" href="#">Detalhes</a>
               </div>
             </div>
             <div class="swiper-slide slide__fundo" data-slide>
               <h2 class="carrossel-div__slide--titulo">Netflix - Clone</h2>
-              <img class="carrossel-div__slide--img" src="img/netflix.jpg" alt="Capa do site Netflix" />
+              <a href="https://netflix-clone-pi-bice.vercel.app/" target="_blank"
+                ><img class="carrossel-div__slide--img" src="img/netflix.jpg" alt="Capa do site Netflix"
+              /></a>
               <div class="carrossel-div-acesso">
-                <a href="#"><img class="carrossel-div-acesso__img" src="img/icon_git.png" alt="Icone do GitHub" /></a>
+                <a href="https://github.com/GabrielMartinelli/Netflix-clone.git" target="_blank"
+                  ><img class="carrossel-div-acesso__img" src="img/icon_git.png" alt="Icone do GitHub"
+                /></a>
                 <a class="carrossel-div-acesso__link" href="#">Detalhes</a>
               </div>
             </div>
           </div>
           <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </section>
 
-    <footer class="rodape">
+    <footer class="rodape" id="contato">
       <div class="rodape-titulo">
         <h2 class="rodape-titulo__texto">Contato</h2>
       </div>
@@ -231,6 +257,10 @@
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>

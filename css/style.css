@@ -1,9 +1,9 @@
-@import url(header.css);
+@import url(cabecalho.css);
 @import url(principal.css);
 @import url(sobre.css);
 @import url(formacao.css);
 @import url(contato.css);
-@import url(carrossel.css);
+@import url(projetos.css);
 
 :root {
   --branco: #ffffff;
