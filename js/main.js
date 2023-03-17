@@ -2,17 +2,17 @@ const menu = document.getElementById("cabecalho-menu");
 const navMenu = document.getElementById("cabecalho-navID");
 const cabecalho = document.getElementById("cabecalhoID");
 const slide = document.querySelectorAll("[data-slide]");
+const topo = document.getElementById("topo");
 
 let verificadorMenu = 0;
 
 menu.addEventListener("click", () => {
   if (verificadorMenu === 0) {
-    navMenu.style.opacity = "1";
-    navMenu.style.transition = ".5s";
+    navMenu.style.display = "flex";
     menu.src = "img/fechar.png";
     verificadorMenu = 1;
   } else {
-    navMenu.style.opacity = "0";
+    navMenu.style.display = "none";
     menu.src = "img/menu.png";
     verificadorMenu = 0;
   }
@@ -23,9 +23,11 @@ const animarSroll = () => {
   if (windowTop > 40) {
     cabecalho.style.backgroundColor = "#141414";
     cabecalho.style.transition = ".5s";
+    topo.style.opacity = "1";
   } else {
     cabecalho.style.backgroundColor = "transparent";
     cabecalho.style.opacity = "0.9";
+    topo.style.opacity = "0";
   }
 };
 
@@ -35,7 +37,6 @@ window.addEventListener("scroll", () => {
 
 const alteracaoCarrossel = () => {
   slide.forEach((elemento) => {
-    console.log(elemento);
     elemento.addEventListener("mouseover", () => {
       console.log(elemento.childNodes);
       elemento.childNodes[5].classList.add("carrossel-divAcesso");
