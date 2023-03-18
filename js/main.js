@@ -3,31 +3,38 @@ const navMenu = document.getElementById("cabecalho-navID");
 const cabecalho = document.getElementById("cabecalhoID");
 const slide = document.querySelectorAll("[data-slide]");
 const topo = document.getElementById("topo");
+const menuItem = document.querySelectorAll("[data-menu]");
 
 let verificadorMenu = 0;
 
 menu.addEventListener("click", () => {
   if (verificadorMenu === 0) {
-    navMenu.style.display = "flex";
+    navMenu.classList.add("menu__nav");
+    menuItem.forEach((elemento) => {
+      elemento.classList.add("menu__lista--item");
+    });
     menu.src = "img/fechar.png";
     verificadorMenu = 1;
   } else {
-    navMenu.style.display = "none";
+    menuItem.forEach((elemento) => {
+      elemento.classList.remove("menu__lista--item");
+    });
+    navMenu.classList.remove("menu__nav");
     menu.src = "img/menu.png";
     verificadorMenu = 0;
   }
 });
 
 const animarSroll = () => {
-  const windowTop = window.pageYOffset;
-  if (windowTop > 40) {
-    cabecalho.style.backgroundColor = "#141414";
-    cabecalho.style.transition = ".5s";
-    topo.style.opacity = "1";
+  const topoPagina = window.pageYOffset;
+  if (topoPagina > 40) {
+    cabecalho.classList.add("scroll__desce");
+    cabecalho.classList.remove("scroll__sobe");
+    topo.classList.add("link-topo-add");
   } else {
-    cabecalho.style.backgroundColor = "transparent";
-    cabecalho.style.opacity = "0.9";
-    topo.style.opacity = "0";
+    cabecalho.classList.remove("scroll__desce");
+    cabecalho.classList.add("scroll__sobe");
+    topo.classList.remove("link-topo-add");
   }
 };
 
