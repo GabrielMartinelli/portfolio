@@ -52,12 +52,12 @@
 }
 
 .formacao-td__div--paragrafo {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .formacao-td__div--link {
   border: 1px solid var(--preto);
-  padding: 0.6rem;
+  padding: 0.6rem 2rem;
   text-decoration: none;
   border-radius: 25px;
   color: var(--preto);
@@ -72,5 +72,5 @@
 
 .formacao-td__div--tempo {
   font-weight: bolder;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }

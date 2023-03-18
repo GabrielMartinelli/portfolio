@@ -1,5 +1,6 @@
 .principal {
   background: url("../img/code_fundo.jpg") no-repeat center / cover;
+  background-position-y: 25%;
   padding-bottom: 6.2rem;
   padding-top: 12rem;
   height: 100%;
