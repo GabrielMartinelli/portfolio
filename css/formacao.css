@@ -1,6 +1,7 @@
 .formacao {
   margin-top: 7rem;
   padding: 0 5rem;
+  width: 100%;
 }
 
 .formacao-titulo {
@@ -73,4 +74,19 @@
 .formacao-td__div--tempo {
   font-weight: bolder;
   margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 980px) {
+  .formacao {
+    margin-top: 3rem;
+    padding: 0;
+  }
+
+  .formacao-td {
+    flex-flow: wrap;
+  }
+
+  .formacao-td__div {
+    margin: 2rem;
+  }
 }

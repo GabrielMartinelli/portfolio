@@ -2,7 +2,8 @@
   align-items: center;
   display: flex;
   justify-content: space-around;
-  margin: 2rem;
+  width: 100%;
+  margin: 0 2rem;
 }
 
 .sobre__img {
@@ -16,6 +17,7 @@
   flex-direction: column;
   text-align: center;
   margin: 0 7rem;
+  width: 100%;
 }
 
 .sobre-titulo {
@@ -36,26 +38,28 @@
 .sobre__habilidades {
   box-shadow: 6px 2px 2px black;
   padding: 1rem;
+  width: 100%;
 }
 
 .sobre__descricao--paragrafo {
   font-size: 18px;
 }
 
-.sobre__descricao--subtitulo {
+.sobre__habilidades--subtitulo {
   font-size: 22px;
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
 }
 
-.sobre__descricao-div {
+.sobre__habilidades-div {
   align-items: center;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
-.sobre__descricao-div2 {
+.sobre__habilidades-div2 {
   margin-right: 2rem;
   background-color: var(--preto);
   padding: 1rem;
@@ -66,17 +70,51 @@
   width: 70px;
 }
 
-.sobre__descricao-div2--img {
+.sobre__habilidades-div2--img {
   height: 40px;
   width: 40px;
   padding: 1rem;
 }
 
-.sobre__descricao-div2:hover {
+.sobre__habilidades-div2:hover {
   transform: scale(1.1);
 }
 
-.sobre__descricao-div2--titulo {
+.sobre__habilidades-div2--titulo {
   font-size: 14px;
   color: var(--verde);
+}
+
+@media screen and (max-width: 980px) {
+  .sobre {
+    flex-direction: column;
+    margin: 0;
+  }
+  .sobre__img {
+    height: 256px;
+    width: 256px;
+  }
+  .sobre-titulo {
+    margin: 2rem 0;
+  }
+  .sobre__descricao--paragrafo {
+    margin: 0 2rem;
+  }
+
+  .sobre__habilidades {
+    box-shadow: 0px 0px 0px var(--branco);
+    padding: 0;
+  }
+  .sobre__habilidades--subtitulo {
+    margin-top: 2rem;
+  }
+  .sobre__habilidades-div {
+    flex-wrap: wrap;
+  }
+  .sobre__habilidades-div2 {
+    margin: 1.5rem;
+  }
+  .sobre__habilidades-div2--titulo {
+    font-size: 12px;
+  }
 }

@@ -144,3 +144,27 @@
   background-color: transparent;
   transition: 0.5s;
 }
+
+@media screen and (max-width: 980px) {
+  .cabecalho-nav__titulo {
+    font-size: 24px;
+  }
+
+  .cabecalho-nav__lista--link {
+    font-size: 1.5rem;
+    padding: 1rem 0.6rem;
+  }
+
+  .cabecalho-nav__lista--item:nth-child(1) {
+    margin-top: 3rem;
+  }
+  .cabecalho-nav__lista {
+    margin-top: 1rem;
+  }
+
+  .cabecalho-nav__bandeiras--br,
+  .cabecalho-nav__bandeiras--usa {
+    height: 40px;
+    width: 40px;
+  }
+}

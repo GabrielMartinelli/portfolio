@@ -1,6 +1,5 @@
 .principal {
   background: url("../img/code_fundo.jpg") no-repeat center / cover;
-  background-position-y: 25%;
   padding-bottom: 6.2rem;
   padding-top: 12rem;
   height: 100%;
@@ -75,4 +74,23 @@
   position: absolute;
   height: 100px;
   width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+  .principal__div--nome {
+    font-size: 65px;
+  }
+
+  .principal__div--profissao {
+    font-size: 28px;
+  }
+
+  .principal__div-icones--curriculo {
+    font-size: 24px;
+  }
+
+  .principal__div-icones--redes {
+    height: 35px;
+    width: 35px;
+  }
 }

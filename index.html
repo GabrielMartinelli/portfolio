@@ -73,24 +73,24 @@
           para assumir novos desafios e fazer a diferença.
         </p>
         <div class="sobre__habilidades">
-          <h2 class="sobre__descricao--subtitulo">Habilidades</h2>
-          <div class="sobre__descricao-div">
-            <div class="sobre__descricao-div2">
-              <span class="sobre__descricao-div2--titulo">HTML5</span>
-              <img class="sobre__descricao-div2--img" src="img/html5.png" alt="Simbolo do HTML5" />
+          <h2 class="sobre__habilidades--subtitulo">Habilidades</h2>
+          <div class="sobre__habilidades-div">
+            <div class="sobre__habilidades-div2">
+              <span class="sobre__habilidades-div2--titulo">HTML5</span>
+              <img class="sobre__habilidades-div2--img" src="img/html5.png" alt="Simbolo do HTML5" />
             </div>
-            <div class="sobre__descricao-div2">
-              <span class="sobre__descricao-div2--titulo">CSS3</span>
-              <img class="sobre__descricao-div2--img" src="img/css.png" alt="Simbolo do CSS3" />
+            <div class="sobre__habilidades-div2">
+              <span class="sobre__habilidades-div2--titulo">CSS3</span>
+              <img class="sobre__habilidades-div2--img" src="img/css.png" alt="Simbolo do CSS3" />
             </div>
-            <div class="sobre__descricao-div2">
-              <span class="sobre__descricao-div2--titulo">JavaScript</span>
-              <img class="sobre__descricao-div2--img" src="img/js.png" alt="Simbolo do JavaScript" />
+            <div class="sobre__habilidades-div2">
+              <span class="sobre__habilidades-div2--titulo">JavaScript</span>
+              <img class="sobre__habilidades-div2--img" src="img/js.png" alt="Simbolo do JavaScript" />
             </div>
-            <div class="sobre__descricao-div2">
-              <span class="sobre__descricao-div2--titulo">TypeScript</span>
+            <div class="sobre__habilidades-div2">
+              <span class="sobre__habilidades-div2--titulo">TypeScript</span>
               <img
-                class="sobre__descricao-div2--img"
+                class="sobre__habilidades-div2--img"
                 id="formacao"
                 src="img/typescript.png"
                 alt="Simbolo do TypeScript"
@@ -251,24 +251,58 @@
         </a>
       </div>
       <span class="rodape-subtitulo">© Todos os direitos reservados - Desenvolvido por Gabriel Martinelli</span>
-      <a class="link-topo" id="topo" href="#principal"><img src="img/subir.png" alt="" /></a>
+      <a class="link-topo" id="topo" href="#principal"
+        ><img class="link-topo-img" src="img/subir.png" alt="Imagem icone seta para cima"
+      /></a>
     </footer>
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        freeMode: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+      const largura = window.screen.availWidth;
+
+      if (largura <= 760) {
+        const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      } else if (largura > 760 && largura <= 980) {
+        const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      } else {
+        const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      }
     </script>
   </body>
 </html>
