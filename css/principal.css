@@ -1,8 +1,8 @@
 .principal {
   background: url("../img/code_fundo.jpg") no-repeat center / cover;
+  height: 100%;
   padding-bottom: 6.2rem;
   padding-top: 12rem;
-  height: 100%;
   width: 100%;
 }
 
@@ -37,8 +37,8 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  width: 100%;
   margin-bottom: 2rem;
+  width: 100%;
 }
 
 .principal__div-icones--curriculo {
@@ -60,8 +60,8 @@
 }
 
 .principal__div-icones--redes {
-  margin-right: 1rem;
   height: 30px;
+  margin-right: 1rem;
   width: 30px;
 }
 
@@ -71,8 +71,8 @@
 }
 
 .principal__imgDivisoria {
-  position: absolute;
   height: 100px;
+  position: absolute;
   width: 100%;
 }
 

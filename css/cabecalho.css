@@ -41,8 +41,8 @@
   flex-direction: column;
   padding: 2.5rem 2.5rem 1rem 2.5rem;
   position: absolute;
-  top: 0.5rem;
   pointer-events: none;
+  top: 0.5rem;
   transition: 0.5s;
 }
 
@@ -50,17 +50,18 @@
   background-color: var(--preto);
   pointer-events: initial;
 }
+
 .cabecalho-nav__lista--item {
   list-style: none;
   margin: 1rem 0;
-  position: relative;
   opacity: 0;
+  position: relative;
   z-index: -10;
 }
 
 .menu__lista--item {
-  z-index: 1;
   opacity: 1;
+  z-index: 1;
 }
 
 .cabecalho-nav__lista--item:hover {
@@ -71,50 +72,50 @@
 .cabecalho-nav__lista--link {
   color: #ffffff;
   font-size: 1.2rem;
+  margin-left: 1rem;
   padding: 0.5rem 0.2rem;
   text-decoration: none;
   text-transform: uppercase;
-  margin-left: 1rem;
 }
 
 .cabecalho-nav__lista--link1::before {
   content: url("../img/home.png");
+  display: flex;
+  left: -20px;
   position: absolute;
   top: -2px;
-  left: -20px;
-  display: flex;
 }
 
 .cabecalho-nav__lista--link2::before {
   content: url("../img/sobre.png");
+  display: flex;
+  left: -20px;
   position: absolute;
   top: -2px;
-  left: -20px;
-  display: flex;
 }
 
 .cabecalho-nav__lista--link3::before {
   content: url("../img/formacao.png");
+  display: flex;
+  left: -20px;
   position: absolute;
   top: -2px;
-  left: -20px;
-  display: flex;
 }
 
 .cabecalho-nav__lista--link4::before {
   content: url("../img/projetos.png");
+  display: flex;
+  left: -20px;
   position: absolute;
   top: -2px;
-  left: -20px;
-  display: flex;
 }
 
 .cabecalho-nav__lista--link5::before {
   content: url("../img/contato.png");
+  display: flex;
+  left: -20px;
   position: absolute;
   top: -2px;
-  left: -20px;
-  display: flex;
 }
 
 .cabecalho-nav__lista--link:hover {
@@ -123,8 +124,8 @@
 
 .cabecalho-nav__bandeiras--br,
 .cabecalho-nav__bandeiras--usa {
-  padding: 0 4px;
   height: 35px;
+  padding: 0 4px;
   width: 35px;
 }
 

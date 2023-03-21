@@ -15,13 +15,12 @@
 }
 
 .rodape-titulo__texto {
+  border-bottom: 2px solid var(--verde);
+  box-shadow: 2px 1px 1px var(--branco);
   color: var(--branco);
   font-size: 32px;
   font-weight: 700;
-
   width: 135px;
-  border-bottom: 2px solid var(--verde);
-  box-shadow: 2px 1px 1px var(--branco);
 }
 
 .rodape-principal {
@@ -74,11 +73,11 @@
 }
 
 .link-topo {
+  bottom: 0;
   opacity: 0;
-  transition: 0.5s;
   position: fixed;
   right: 10px;
-  bottom: 0;
+  transition: 0.5s;
 }
 
 .link-topo-add {
@@ -100,12 +99,12 @@
   .rodape-subtitulo {
     margin-left: 2rem;
     margin-right: 2rem;
-    text-align: center;
     margin-top: 2rem;
+    text-align: center;
   }
 
   .link-topo-img {
-    width: 50px;
     height: 50px;
+    width: 50px;
   }
 }

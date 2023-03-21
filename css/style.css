@@ -7,11 +7,11 @@
 
 :root {
   --branco: #ffffff;
+  --cinza: #d4d4d4;
   --preto: #000000;
   --pretoScroll: #141414;
   --verde: #00d6a2;
   --verde-escuro: #038363;
-  --cinza: #d4d4d4;
 }
 
 html {

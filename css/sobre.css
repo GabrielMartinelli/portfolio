@@ -6,17 +6,17 @@
 }
 
 .sobre__img {
-  height: 312px;
-  width: 312px;
   border-radius: 50%;
+  height: 312px;
   margin-left: 5rem;
+  width: 312px;
 }
 
 .sobre__descricao {
   display: flex;
   flex-direction: column;
-  text-align: center;
   margin: 0 7rem;
+  text-align: center;
   width: 100%;
 }
 
@@ -27,12 +27,12 @@
 }
 
 .sobre-titulo__texto {
+  border-bottom: 2px solid var(--verde);
+  box-shadow: 2px 1px 1px black;
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 1rem;
   width: 180px;
-  border-bottom: 2px solid var(--verde);
-  box-shadow: 2px 1px 1px black;
 }
 
 .sobre__habilidades {
@@ -60,20 +60,20 @@
 }
 
 .sobre__habilidades-div2 {
-  margin-right: 2rem;
   background-color: var(--preto);
-  padding: 1rem;
   border-radius: 15px 0 0 0;
   border-bottom: 4px solid var(--verde);
-  transition: 0.2s;
   height: 70px;
+  margin-right: 2rem;
+  padding: 1rem;
+  transition: 0.2s;
   width: 70px;
 }
 
 .sobre__habilidades-div2--img {
   height: 40px;
-  width: 40px;
   padding: 1rem;
+  width: 40px;
 }
 
 .sobre__habilidades-div2:hover {
@@ -92,8 +92,8 @@
   }
   .sobre__img {
     height: 256px;
-    width: 256px;
     margin-left: 0;
+    width: 256px;
   }
   .sobre-titulo {
     margin: 2rem 0;

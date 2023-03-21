@@ -1,7 +1,6 @@
 const menu = document.getElementById("cabecalho-menu");
 const navMenu = document.getElementById("cabecalho-navID");
 const cabecalho = document.getElementById("cabecalhoID");
-const slide = document.querySelectorAll("[data-slide]");
 const topo = document.getElementById("topo");
 const menuItem = document.querySelectorAll("[data-menu]");
 
@@ -41,24 +40,3 @@ const animarSroll = () => {
 window.addEventListener("scroll", () => {
   animarSroll();
 });
-
-const alteracaoCarrossel = () => {
-  slide.forEach((elemento) => {
-    elemento.addEventListener("mouseover", () => {
-      console.log(elemento.childNodes);
-      elemento.childNodes[5].classList.add("carrossel-divAcesso");
-      elemento.childNodes[1].classList.add("carrossel-divTitulo");
-      elemento.classList.remove("slide__fundo");
-    });
-  });
-
-  slide.forEach((elemento) => {
-    elemento.addEventListener("mouseleave", () => {
-      elemento.childNodes[5].classList.remove("carrossel-divAcesso");
-      elemento.childNodes[1].classList.remove("carrossel-divTitulo");
-      elemento.classList.add("slide__fundo");
-    });
-  });
-};
-
-alteracaoCarrossel();
