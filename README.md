@@ -1,7 +1,7 @@
 <h1 align="center">Portfólio</h1>
 
 # Sobre o projeto
-Criação do meu portfólio pessoal, onde exibo minhas informações, como habilidades, formação e projetos desenvolvidos.
+Criação do meu portfólio pessoal onde exibo minhas informações, como habilidades, formação e projetos desenvolvidos.
 
  🔽 **Clique <a href="https://github.com/GabrielMartinelli/portfolio/archive/refs/heads/master.zip">aqui</a> para baixar o projeto.**
 
