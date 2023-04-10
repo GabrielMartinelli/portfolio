@@ -25,3 +25,14 @@ body {
   height: 100%;
   width: 100%;
 }
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--pretoScroll);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--verde);
+  border-radius: 20px;
+}
