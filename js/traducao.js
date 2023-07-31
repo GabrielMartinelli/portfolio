@@ -28,7 +28,7 @@ ingles.addEventListener("click", () => {
         eng.innerHTML = "Contact";
         break;
       case "profissao":
-        eng.innerHTML = "Front-end Developer";
+        eng.innerHTML = "Software Developer";
         break;
       case "divSobre":
         eng.innerHTML = "About me";
