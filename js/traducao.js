@@ -10,7 +10,7 @@ ingles.addEventListener("click", () => {
         eng.innerHTML = "Portfolio";
         break;
       case "titulo":
-        eng.innerHTML = "Portfolio | Gabriel Martinelli - Front-end Developer";
+        eng.innerHTML = "Portfolio | Gabriel Martinelli - Software Developer";
         break;
       case "inicio":
         eng.innerHTML = "Home";
