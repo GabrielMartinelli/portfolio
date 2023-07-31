@@ -21,8 +21,11 @@ ingles.addEventListener("click", () => {
       case "formacao":
         eng.innerHTML = "Education";
         break;
-      case "projetos":
-        eng.innerHTML = "Projects";
+      case "projetos-high":
+        eng.innerHTML = "Projects High-code";
+        break;
+      case "projetos-low":
+        eng.innerHTML = "Projects Low-code";
         break;
       case "contato":
         eng.innerHTML = "Contact";
@@ -141,8 +144,11 @@ portugues.addEventListener("click", () => {
       case "formacao":
         pt.innerHTML = "Formação";
         break;
-      case "projetos":
-        pt.innerHTML = "Projetos";
+      case "projetos-high":
+        pt.innerHTML = "Projetos High-code";
+        break;
+      case "projetos-low":
+        pt.innerHTML = "Projetos Low-code";
         break;
       case "contato":
         pt.innerHTML = "Contato";
@@ -210,24 +216,24 @@ portugues.addEventListener("click", () => {
         pt.innerHTML = "Carga horária: 31h.";
         break;
       case "formacaoReact":
-        eng.innerHTML = "Formação Explore React com JavaScript";
+        pt.innerHTML = "Formação Explore React com JavaScript";
         break;
       case "formacaoParagrafoReact":
-        eng.innerHTML =
+        pt.innerHTML =
           "<b>Competências desenvolvidas:</b> Arquivos estáticos, roteamento, gestão de estados, react com typescript, ContextAPI, Hooks.";
         break;
       case "formacaoCargaReact":
-        eng.innerHTML = "Carga horária: 65h.";
+        pt.innerHTML = "Carga horária: 65h.";
         break;
       case "formacaoBackEnd":
-        eng.innerHTML = "Formação Aprenda a programar em JavaScript com foco no back-end";
+        pt.innerHTML = "Formação Aprenda a programar em JavaScript com foco no back-end";
         break;
       case "formacaoParagrafoBackEnd":
-        eng.innerHTML =
+        pt.innerHTML =
           "<b>Competências desenvolvidas:</b> Tipos, variáveis, funções, arrays, objetos, NodeJs, criação de uma API.";
         break;
       case "formacaoCargaBackEnd":
-        eng.innerHTML = "Carga horária: 74h.";
+        pt.innerHTML = "Carga horária: 74h.";
         break;
       case "acessar":
         pt.innerHTML = "Acessar";
