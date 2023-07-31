@@ -89,6 +89,26 @@ ingles.addEventListener("click", () => {
       case "formacaoCargaTs":
         eng.innerHTML = "Total hours: 31h.";
         break;
+      case "formacaoReact":
+        eng.innerHTML = "Explore React Training with JavaScript";
+        break;
+      case "formacaoParagrafoReact":
+        eng.innerHTML =
+          "<b>Developed skills:</b> Static files, routing, state management, react with typescript, ContextAPI, Hooks.";
+        break;
+      case "formacaoCargaReact":
+        eng.innerHTML = "Total hours: 65h.";
+        break;
+      case "formacaoBackEnd":
+        eng.innerHTML = "Training Learn to program in JavaScript with a focus on the backend";
+        break;
+      case "formacaoParagrafoBackEnd":
+        eng.innerHTML =
+          "<b>Developed skills:</b> Types, variables, functions, arrays, objects, NodeJs, creating an API.";
+        break;
+      case "formacaoCargaBackEnd":
+        eng.innerHTML = "Total hours: 74h.";
+        break;
       case "acessar":
         eng.innerHTML = "Access";
         break;
@@ -188,6 +208,26 @@ portugues.addEventListener("click", () => {
         break;
       case "formacaoCargaTs":
         pt.innerHTML = "Carga horária: 31h.";
+        break;
+      case "formacaoReact":
+        eng.innerHTML = "Formação Explore React com JavaScript";
+        break;
+      case "formacaoParagrafoReact":
+        eng.innerHTML =
+          "<b>Competências desenvolvidas:</b> Arquivos estáticos, roteamento, gestão de estados, react com typescript, ContextAPI, Hooks.";
+        break;
+      case "formacaoCargaReact":
+        eng.innerHTML = "Carga horária: 65h.";
+        break;
+      case "formacaoBackEnd":
+        eng.innerHTML = "Formação Aprenda a programar em JavaScript com foco no back-end";
+        break;
+      case "formacaoParagrafoBackEnd":
+        eng.innerHTML =
+          "<b>Competências desenvolvidas:</b> Tipos, variáveis, funções, arrays, objetos, NodeJs, criação de uma API.";
+        break;
+      case "formacaoCargaBackEnd":
+        eng.innerHTML = "Carga horária: 74h.";
         break;
       case "acessar":
         pt.innerHTML = "Acessar";
